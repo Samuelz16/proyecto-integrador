@@ -1,0 +1,101 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-image: url(logo-julian.jpg); 
+}
+
+.navegador {
+    display: flex; 
+    justify-content: center; 
+    font-family: cursive;
+    margin: 20px 0; 
+}
+
+.registrate, .acercade, .redes, .logina { 
+    color: #110f13;
+    border: 2px solid black; 
+    padding: 10px; 
+    margin: 0 15px; 
+    background-color: #cddae0;
+    text-align: center; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.registrate:hover, .acercade:hover, .redes:hover, .login:hover {
+    background-color: #a3c1c8;
+}
+
+h1 {
+    color: #110f13; 
+    text-align: center; 
+    font-family: cursive;
+}
+
+h2 { 
+    color: #110f13; 
+    text-align: center;
+    font-family: cursive;
+    margin: 0;
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.subtitulo {
+    color: #110f13; 
+    text-align: center;
+    font-family: cursive;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.flex-item {
+    flex: 1 1 200px; 
+    margin: 10px;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin: 20px; 
+}
+
+.imagen-hover {
+    position: relative;
+    width: 300px; 
+    height: 250px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+.imagen-default {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; 
+}
+
+.imagen-hover:hover .imagen-default {
+    transform: scale(1.1); 
+}
+
+.imagen-hover img.imagen-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imagen-hover:hover img.imagen-hover {
+    opacity: 1;
+}

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(logo-julian.jpg); 
+    background-color: black; 
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.flex-item {
+    flex: 1 1 200px; 
+    margin: 10px;
+}
+
+header {
+    
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navegador {
+    display: flex; 
+    justify-content: center; 
+    font-family: cursive;
+    margin: 20px 0; 
+}
+
+.registrate, .acercade, .redes, .logina { 
+    color: #110f13; 
+    border: 2px solid white; 
+    padding: 10px; 
+    margin: 0 15px; 
+    background-color: #cddae0; 
+    text-align: center; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.registrate:hover, .acercade:hover, .redes:hover, .logina:hover {
+    background-color: #a3c1c8; 
+}
+
+h1 {
+    color: white; 
+    font-family: cursive;
+}
+
+h2 { 
+    color: rgb(255, 170, 170); 
+    text-align: center;
+    font-family: cursive;
+    margin: 30px 0 10px; 
+    font-size: 30px;
+}
+
+p {
+    color: white; 
+    text-align: center;
+    font-family: cursive;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px; 
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+ 
+    color: #110f13; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
